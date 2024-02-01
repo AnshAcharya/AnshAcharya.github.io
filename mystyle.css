@@ -1,0 +1,80 @@
+body {
+    background-color: rgba(41, 37, 45, 0.849);
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    box-shadow: 0 0 20px black;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+    margin: 0 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.about{
+    display:flex;
+    padding:0.5%;
+}
+
+.image img {
+    padding:10px;
+    border-radius: 60px;
+    border:20px solid #FF8246;
+    margin-top: 20px;
+}
+
+.txt{
+    padding:0.5%;
+    background: repeating-linear-gradient(to right, #4e54c8, #8f94fb);
+    margin-top:20px;
+    width: 98%;
+    border-radius: 60px;
+    font-size: large;
+    margin-left: 20px;
+    text-align-last: left;
+    color: aqua;
+    
+}
+
+.education{ 
+    background: repeating-linear-gradient(to right, #4e54c8, #8f94fb);
+    margin-top:20px;
+    width: 98%;
+    border-radius: 60px;
+    font-size: large;
+    margin-left: 20px;
+    color: aqua;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+.social-icons li {
+    display: flex;
+    margin-right: 10px;
+}
+.social-icons li:last-child {
+    margin-right: 0;
+}
+.social-icons a {
+    text-decoration: none;
+    color: #000;
+}
