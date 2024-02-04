@@ -4,23 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="my_light.css" id="stylesheet">
     <title>my profile</title>
 </head>
 
-<body>
+<body class="mode">
 
     <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#social">Socials</a></li>
-        </ul>
-    </nav>
+    <div class="navbutton">
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#social">Socials</a></li>
+            </ul>
+        </nav>
+        <button onclick="toggleMode()" id="dark-mode-toggle"><label class="toggle-label" for="toggle-mode">Dark
+                Mode</label></button>
+    </div>
     <div class="about" id="about">
 
         <div class="image">
@@ -83,7 +87,7 @@
         <div class="txt">
             <h1>You can contact me here</h1>
             <ul class="social-icon">
-                
+
                 <li><a href="https://github.com/AnshAcharya" target="_blank"><img src="GitHub-Symbol.png" alt="GitHub"
                             height="40px" width="70px">My GitHub account</a></li>
                 <li><a href="mailto:ansh.acharya@students.iiit.ac.in"><img src="gmail-02.png" alt="Email" height="40px"
@@ -91,6 +95,7 @@
             </ul>
         </div>
     </div>
+    <script src="darkmode.js"></script>
 </body>
 
 </html>

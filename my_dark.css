@@ -1,6 +1,7 @@
-body {
-    background-color: rgba(41, 37, 45, 0.849);
+.mode{
+    background-color:black;
 }
+
 
 
 nav ul {
@@ -13,14 +14,15 @@ nav ul {
 
 nav {
     box-shadow: 0 0 20px black;
-    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    background: linear-gradient(to right, #282b68, #51548e);
     padding: 10px;
     border-radius: 20px;
+    width: 88%;
 }
 
 a {
     text-decoration: none;
-    color: aqua;
+    color: rgb(0, 136, 136);
     margin: 0 15px;
 }
 
@@ -36,31 +38,33 @@ a:hover {
 .image img {
     padding:10px;
     border-radius: 60px;
-    border:20px solid #FF8246;
+    border:20px solid #a9532b;
     margin-top: 20px;
 }
 
 .txt{
     padding:0.5%;
-    background: repeating-linear-gradient(to right, #4e54c8, #8f94fb);
+    background: linear-gradient(to right, #282b68, #51548e);
     margin-top:20px;
     width: 98%;
     border-radius: 60px;
     font-size: large;
     margin-left: 20px;
     text-align-last: left;
-    color: aqua;
+    color: rgb(0, 136, 136);
+;
     
 }
-
+/* TODO : change colour for dark mode */
 .education{ 
-    background: repeating-linear-gradient(to right, #4e54c8, #8f94fb);
+    background: linear-gradient(to right, #282b68, #51548e);
     margin-top:20px;
     width: 98%;
     border-radius: 60px;
     font-size: large;
     margin-left: 20px;
-    color: aqua;
+    color: rgb(0, 136, 136);
+;
 }
 
 .social-icons {
@@ -77,4 +81,25 @@ a:hover {
 .social-icons a {
     text-decoration: none;
     color: #000;
+}
+
+button {
+    padding:10px;
+    background: yellow;
+    width: 10%;
+    border-radius: 60px;
+    margin-left: 20px;
+    text-align: center;
+    color: black;
+    margin: auto;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.navbutton{
+    display:flex;
+    align-items: center;
+    align-content: center;
 }

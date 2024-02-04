@@ -1,4 +1,3 @@
-// Function to increase like counter
 function increaseLike(counterId) {
     var currentLikes = parseInt(document.getElementById(counterId).innerText);
     currentLikes++;
@@ -6,7 +5,16 @@ function increaseLike(counterId) {
     localStorage.setItem(counterId, currentLikes);
 }
 
-// Function to add comment
+// function decreaseLike(counterId) {
+//     var currentLikes = parseInt(document.getElementById(counterId).innerText);
+//     if (currentLikes <= 0) {
+//         return;
+//     }
+//     currentLikes--;
+//     document.getElementById(counterId).innerText = currentLikes;
+//     localStorage.setItem(counterId, currentLikes);
+// }
+
 function addComment(inputId, listId) {
     var comment = document.getElementById(inputId).value;
     if (comment.trim() !== "") {
@@ -25,8 +33,7 @@ function addComment(inputId, listId) {
     }
 }
 
-// Load likes and comments from local storage
-window.onload = function() {
+window.onload = function () {
     var storedLikes = localStorage.getItem("likeCounter1");
     if (storedLikes) {
         document.getElementById("likeCounter1").innerText = storedLikes;
@@ -35,7 +42,7 @@ window.onload = function() {
     var storedComments = JSON.parse(localStorage.getItem("commentList1"));
     if (storedComments) {
         var commentList = document.getElementById("commentList1");
-        storedComments.forEach(function(comment) {
+        storedComments.forEach(function (comment) {
             var listItem = document.createElement("li");
             listItem.textContent = comment;
             commentList.appendChild(listItem);

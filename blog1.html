@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog 1</title>
+    <link rel="stylesheet" href="blog.css">
 </head>
+
 <body>
-    <h1>Blog 1</h1>
-    
-    <h2>Like Counter: <span id="likeCounter1">0</span></h2>
-    <button onclick="increaseLike('likeCounter1')">Like</button>
-    
-    <h2>Comments:</h2>
-    <textarea id="commentInput1" rows="4" cols="50"></textarea><br>
-    <button onclick="addComment('commentInput1', 'commentList1')">Add Comment</button>
-    <ul id="commentList1"></ul>
-    <button onclick="clearLocalStorage()">Clear Likes and Comments</button>
+    <div class="blog">
+        <h1>Blog 1</h1>
+        <p>this is bolg 1 written by me.</p>
+
+        <div class="inline">
+            <h2>Likes : <span id="likeCounter1">0</span></h2>
+            <button onclick="increaseLike('likeCounter1')">Like</button>
+        </div>
+
+        <div class="inline">
+            <h2>Dislikes : <span id="dislikeCounter1">0</span></h2>
+            <button onclick="increaseLike('dislikeCounter1')">Disike</button>
+        </div>
+    </div>
+
+    <div class="blog">
+        <h2>Comments:</h2>
+        <textarea id="commentInput1" rows="4" cols="50"></textarea><br>
+        <div class="inline">
+            <button onclick="addComment('commentInput1', 'commentList1')">Add Comment</button>
+            <ul id="commentList1"></ul>
+            <button onclick="clearLocalStorage()">Clear Likes and Comments</button>
+        </div>
+    </div>
 
     <script src="blog.js"></script>
 </body>
+
 </html>

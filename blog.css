@@ -1,0 +1,39 @@
+.blog {
+    background: repeating-linear-gradient(to right, #4e54c8, #8f94fb);
+    margin-top:20px;
+    width: 98%;
+    border-radius: 60px;
+    font-size: large;
+    margin-left: 20px;
+    color: aqua;
+    padding: 0.5%;
+    
+}
+
+.inline {
+    display:flex;
+}
+
+button {
+    padding:10px;
+    background: #4e54c8;
+    width: 10%;
+    border-radius: 60px;
+    margin-left: 20px;
+    text-align: center;
+    color: aqua;
+    margin: auto;
+}
+
+.inline h2 {
+    margin-left:70%;
+}
+
+.inline button {
+    margin:right !important;
+}
+
+.blog textarea {
+    border-radius: 20px;
+    background-color: lightgreen;
+}
