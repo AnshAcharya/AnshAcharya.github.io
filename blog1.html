@@ -14,13 +14,7 @@
         <p>this is bolg 1 written by me.</p>
 
         <div class="inline">
-            <h2>Likes : <span id="likeCounter1">0</span></h2>
-            <button onclick="increaseLike('likeCounter1')">Like</button>
-        </div>
-
-        <div class="inline">
-            <h2>Dislikes : <span id="dislikeCounter1">0</span></h2>
-            <button onclick="increaseLike('dislikeCounter1')">Disike</button>
+            <button id="like-button" onclick="increaseLike()">Like</button>
         </div>
     </div>
 
@@ -28,9 +22,11 @@
         <h2>Comments:</h2>
         <textarea id="commentInput1" rows="4" cols="50"></textarea><br>
         <div class="inline">
-            <button onclick="addComment('commentInput1', 'commentList1')">Add Comment</button>
             <ul id="commentList1"></ul>
-            <button onclick="clearLocalStorage()">Clear Likes and Comments</button>
+
+            <button onclick="addComment('commentInput1', 'commentList1')">Add Comment</button>
+
+            <button onclick="clearLocalStorage()">Clear Comments</button>
         </div>
     </div>
 

@@ -1,19 +1,13 @@
-function increaseLike(counterId) {
-    var currentLikes = parseInt(document.getElementById(counterId).innerText);
-    currentLikes++;
-    document.getElementById(counterId).innerText = currentLikes;
-    localStorage.setItem(counterId, currentLikes);
+function increaseLike() {
+    let like = document.getElementById("like-button").innerText;
+    if(like === "Like") {
+        document.getElementById("like-button").innerText = "Dislike";
+        document.getElementById("like-button").style = "background-color: hsl(323.6842105263158,100%,45%);";
+    } else {
+        document.getElementById("like-button").innerText = "Like";
+        document.getElementById("like-button").style = "background-color: #4e54c8;";
+    }
 }
-
-// function decreaseLike(counterId) {
-//     var currentLikes = parseInt(document.getElementById(counterId).innerText);
-//     if (currentLikes <= 0) {
-//         return;
-//     }
-//     currentLikes--;
-//     document.getElementById(counterId).innerText = currentLikes;
-//     localStorage.setItem(counterId, currentLikes);
-// }
 
 function addComment(inputId, listId) {
     var comment = document.getElementById(inputId).value;
@@ -28,9 +22,7 @@ function addComment(inputId, listId) {
         var comments = JSON.parse(localStorage.getItem(listId)) || [];
         comments.push(comment);
         localStorage.setItem(listId, JSON.stringify(comments));
-    } else {
-        alert("Please enter a valid comment.");
-    }
+    } 
 }
 
 window.onload = function () {

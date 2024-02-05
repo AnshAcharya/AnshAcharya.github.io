@@ -25,12 +25,9 @@ button {
     margin: auto;
 }
 
-.inline h2 {
-    margin-left:70%;
-}
-
-.inline button {
-    margin:right !important;
+.blog button{
+    margin-top: 2%;
+    margin-right: 2%;
 }
 
 .blog textarea {

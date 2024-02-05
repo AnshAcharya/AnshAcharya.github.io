@@ -11,16 +11,11 @@
 <body>
     <div class="blog">
         <h1>Blog 2</h1>
-        <p>this is bolg 2 written by me.</p>
+        <p>this is bolg 2 written by me. And yes, it is same as blog 1</p>
 
         <div class="inline">
-            <h2>Likes: <span id="likeCounter2">0</span></h2>
-            <button onclick="increaseLike('likeCounter2')">Like</button>
-        </div>
-
-        <div class="inline">
-            <h2>Dislikes : <span id="dislikeCounter2">0</span></h2>
-            <button onclick="increaseLike('dislikeCounter2')">Disike</button>
+            <!-- <h2>Likes: <span id="likeCounter2">0</span></h2> -->
+            <button id="like-button" onclick="increaseLike()">Like</button>
         </div>
     </div>
 
@@ -28,8 +23,8 @@
         <h2>Comments:</h2>
         <textarea id="commentInput2" rows="4" cols="50"></textarea><br>
         <div class="inline">
-            <button onclick="addComment('commentInput2', 'commentList2')">Add Comment</button>
             <ul id="commentList2"></ul>
+            <button onclick="addComment('commentInput2', 'commentList2')">Add Comment</button>
             <button onclick="clearLocalStorage()">Clear Likes and Comments</button>
         </div>
     </div>
